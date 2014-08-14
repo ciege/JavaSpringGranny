@@ -1,7 +1,6 @@
 package com.osintegrators.example;
 
 import static org.junit.Assert.*;
-import java.util.List;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -44,7 +43,7 @@ public class TestAddressService {
 		Address address = createAddressObject(expectedName, expectedAddress,
 				expectedPhone, expectedEmail);
 		addressService.createAddress(address);
-		Address result = addressService.getAddressById(1L);
+		//Address result = addressService.getAddressById(1L);
 
 		assertEquals(expectedName, address.getName());
 		assertEquals(expectedAddress, address.getAddress());
